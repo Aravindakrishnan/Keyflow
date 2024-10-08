@@ -40,7 +40,7 @@ function App() {
       <Canvas>
         <ambientLight intensity={1}></ambientLight>
         <directionalLight position={[0,0,2]}></directionalLight>
-        {/* <Loading color={"orange"} size={[1,1,1]} position={[0,1,0]}></Loading> */}
+        <Loading color={"orange"} size={[1,1,1]} position={[0,1,0]}></Loading>
 
         {/* <Cube position={[0,2,0]} size={[1,1,1]} color={"orange"}></Cube>
         <OrbitControls enableZoom={false}></OrbitControls> */}
