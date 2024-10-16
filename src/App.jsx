@@ -5,6 +5,8 @@ import Loading from './components/Loading/Loading'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { MeshWobbleMaterial, MeshDistortMaterial, OrbitControls, useGLTF } from '@react-three/drei'
 import './App.css'
+import Keyboard from './components/Keyboard/Keyboard'
+
 
 // import modelPath from "./assets/Keyboard.glb";
 
@@ -37,10 +39,14 @@ function App() {
   return (
     <>
       <Navbar title={"KeyFlow"}></Navbar>
-      <Canvas>
+      <div>
+        <Keyboard></Keyboard>
+      </div>
+      {/* <Canvas>
+        <Keyboard></Keyboard>
         <ambientLight intensity={1}></ambientLight>
-        <directionalLight position={[0,0,2]}></directionalLight>
-        <Loading color={"orange"} size={[1,1,1]} position={[0,1,0]}></Loading>
+        <directionalLight position={[0,0,2]}></directionalLight> */}
+        {/* <Loading color={"orange"} size={[1,1,1]} position={[0,1,0]}></Loading> */}
 
         {/* <Cube position={[0,2,0]} size={[1,1,1]} color={"orange"}></Cube>
         <OrbitControls enableZoom={false}></OrbitControls> */}
@@ -54,8 +60,7 @@ function App() {
           <sphereGeometry></sphereGeometry>
           <meshStandardMaterial color={"Orange"}></meshStandardMaterial>
         </mesh> */}
-        
-      </Canvas>
+      {/* </Canvas> */}
     </>
   )
 }
